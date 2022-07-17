@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  min-height: 100vh;
+  /**/
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: x-large;
+  background-image: url('/src/assets/background.png');
+  background-size: cover;
+  background-position: bottom;
+  color: #1D1D1D;
+}
+
+.general{
+  max-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+}
+
+.mountain{
+  z-index: 3;
+  max-height: 40vh;
+  right: -260px;
+  bottom: 0;
+  position: fixed;
+  transform: translateY(0vh);
+  animation-name: mountain;
+  animation-duration: 2s;
+}
+
+@keyframes mountain{
+  0% {transform: translateY(100vh) ;}
+  100% {transform: translateY(0);}
+}
+
+
+@keyframes location {
+  0% {transform: translateX(-80vw);}
+  100% {transform: translateX(0);}
+}
+
+.App{
+  display: flex;
+  justify-content: flex-start;
+  height: 85vh;
+}
+
+.header{
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@keyframes title {
+  0% {transform: translateY(-25vh);}
+  100% {transform: translateX(0);}
+}
+
+.app-title{
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 0;
+  font-size: 20px;
+  animation: title 2s ease;
+}
+
+.weather{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 55vw;
+  height: 70vh;
+  border-radius: 10px;
+  background-color: rgba(43, 42, 42, 0.256);
+}
+
+.location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 65vw;
+  height: 30vh;
+  border-radius: 10px;
+  animation: location 2s ease;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.location-welcome{
+  margin-top: 0px;
+  font-size: 30px;
+  width: inherit;
+}
+
+.location > div{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: inherit;
+}
+
+.location-btn{
+  height: 45px;
+  width: 160px;
+  margin-left: 2px;
+  font-size: 20px;
+  font-family: 'Ibarra Real Nova', serif;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px 10px 10px 10px;
+  transition: 400ms ease;
+  border: 3px solid #1D1D1D;
+}
+
+.location-btn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color:rgb(65, 65, 65);
+  transition: 400ms ease;
+  color: blanchedalmond;
+}
+
+.get-location{
+  background-color: #1D1D1D;
+  color: blanchedalmond;
+}
