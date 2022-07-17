@@ -1,10 +1,12 @@
 import React, { useRef } from 'react'
+import './location.css'
+import { useNavigate } from 'react-router-dom'
 
 const GetLocationScreen = () => {
 
-  useRef
-  const clas = () =>{
-
+  const navigate = useNavigate()
+  const btnClick = () =>{
+    navigate('/weather')
   }
 
   return (
@@ -13,7 +15,7 @@ const GetLocationScreen = () => {
         Welcome to the best app for weather information
       </h2>
       <div>
-        <button className='location-btn'>Get Location</button>
+        <button onClick={btnClick} className='location-btn'>Get Location</button>
       </div>
     </div>
   )

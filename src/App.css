@@ -37,12 +37,6 @@ body{
   100% {transform: translateY(0);}
 }
 
-
-@keyframes location {
-  0% {transform: translateX(-80vw);}
-  100% {transform: translateX(0);}
-}
-
 .App{
   display: flex;
   justify-content: flex-start;
@@ -67,66 +61,4 @@ body{
   margin-bottom: 0;
   font-size: 20px;
   animation: title 2s ease;
-}
-
-.weather{
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  width: 55vw;
-  height: 70vh;
-  border-radius: 10px;
-  background-color: rgba(43, 42, 42, 0.256);
-}
-
-.location{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 65vw;
-  height: 30vh;
-  border-radius: 10px;
-  animation: location 2s ease;
-  margin-left: 30px;
-  margin-top: 40px;
-}
-
-.location-welcome{
-  margin-top: 0px;
-  font-size: 30px;
-  width: inherit;
-}
-
-.location > div{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: inherit;
-}
-
-.location-btn{
-  height: 45px;
-  width: 160px;
-  margin-left: 2px;
-  font-size: 20px;
-  font-family: 'Ibarra Real Nova', serif;
-  background-color: transparent;
-  border: none;
-  border-radius: 0px 10px 10px 10px;
-  transition: 400ms ease;
-  border: 3px solid #1D1D1D;
-}
-
-.location-btn:hover{
-  cursor: pointer;
-  transform: scale(1.1);
-  background-color:rgb(65, 65, 65);
-  transition: 400ms ease;
-  color: blanchedalmond;
-}
-
-.get-location{
-  background-color: #1D1D1D;
-  color: blanchedalmond;
 }
