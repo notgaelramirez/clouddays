@@ -35,7 +35,7 @@ const WeatherScreen = () => {
     getData()
   }, [])
   
-
+  if (data) {
   return (
     <div className='weather'>
       <div className="weather-container">
@@ -62,6 +62,7 @@ const WeatherScreen = () => {
       <ForecastScreen />
     </div>
   )
+  }
 }
 
 export default WeatherScreen
