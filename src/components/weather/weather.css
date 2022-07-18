@@ -1,9 +1,32 @@
 .weather{
+  position: fixed;
+  z-index: 4;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  width: 55vw;
-  height: 70vh;
-  border-radius: 10px;
-  background-color: rgba(43, 42, 42, 0.256);
+  align-items: center;
+  gap: 5px;
+  min-width: 100vw;
+  min-height: 85vh;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.weather-container{
+  background-color: rgba(66, 66, 66, 0.726);
+  width: 90%;
+  height: 30vh;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.city{
+  background-color: chartreuse;
+}
+
+.city > h3{
+  margin: 10px;
 }
